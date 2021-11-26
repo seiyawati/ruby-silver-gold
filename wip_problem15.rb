@@ -19,3 +19,6 @@ else
   puts "tty false"
 end
 # tty?はioオブジェクトがコンソールに関連付けられているかどうかを判別する。
+
+# qiita URL
+# https://qiita.com/naotospace/items/bd0a5295e540e27936b3

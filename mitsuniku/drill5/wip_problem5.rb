@@ -5,6 +5,8 @@ stat = file.stat
 # 最終更新時刻
 p mtime1 = stat.mtime
 file.puts("new data")
-# 即座にメタデータは更新されない
+# closeされていない状態ではバッファと呼ばれるメモリの蓄積される
+# flushをするとそのたびに書き込みを指示できる
 file.flush
+# ファイルに書き込みがあってもスナップショットは自動的に更新されない。
 p mtime2 = stat.mtime

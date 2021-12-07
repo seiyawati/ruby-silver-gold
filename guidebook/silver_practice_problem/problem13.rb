@@ -24,3 +24,16 @@ employees.sort!
 p employees
 # p employees.sort_by{|employee|employee.id}
 employees.each do |employee| puts employee end
+
+arr = [1, 4, 3, 2, 5]
+p arr.sort{|a, b| a.to_i <=> b.to_i}
+p arr.sort{|a, b| b.to_i <=> a.to_i}
+
+10 <=> 20   #  -1
+20 <=> 10   #   1
+20 <=> 20   #   0
+20 <=> '20' # nil
+
+# sortメソッドで行われること
+1. 配列の各要素に対して、他の要素と比較した際の戻り値の合計を割り当てる。
+2. その値を昇順で並べる

@@ -26,8 +26,8 @@ p employees
 employees.each do |employee| puts employee end
 
 arr = [1, 4, 3, 2, 5]
-p arr.sort{|a, b| a.to_i <=> b.to_i}
-p arr.sort{|a, b| b.to_i <=> a.to_i}
+p arr.sort{|a, b| a.to_i <=> b.to_i} # 昇順
+p arr.sort{|a, b| b.to_i <=> a.to_i} # 降順
 
 10 <=> 20   #  -1
 20 <=> 10   #   1
